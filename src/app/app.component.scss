@@ -1,0 +1,106 @@
+#input{
+  font-size: 20px;
+  color: #673ab7;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+#shopName{
+  margin-left: 15px;
+  margin-right: 50px;
+}
+#myApp{
+  display: grid;
+}
+#button{
+  margin-left: 15px;
+}
+#iconSearch{
+  color: black;
+}
+// .button, .icon{
+//   border: none;
+//   background-color: #673ab7;
+//   font-weight: bold;
+// }
+// .button{
+//   margin-right: 50px;
+//   margin-bottom: 5px;
+//   font-size: 20px;
+// }
+// .icon{
+//   margin-right: 15px;
+// }
+// .button:hover, .icon:hover{
+//   transition: 0.2s;
+//   background-color: #931A6F;
+//   font-size: 25px;
+// }
+.example-form {
+  margin-top: 20px;
+  min-width: 150px;
+  max-width: 500px;
+  
+}
+.toolbar{
+  height: 80%;
+}
+.example-full-width {
+  width: 180%;
+}
+.container{
+  margin: 15px;
+  max-width: 100%;
+  width: 270px;
+  background-color: #673ab7;
+  
+}
+// .container{
+//   margin: 5px;
+//   width: 270px;
+//   max-width: 1000px;
+//   background-color: plum;
+// }
+.title{
+  display: flex;
+  justify-content: center;
+  color: #931A6F;
+}
+h1{
+  font-weight: bolder;
+}
+.sanPham{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px 20px;
+}
+#name{
+  display: flex;
+  justify-content: center;
+}
+#image{
+  height: 100%;
+}
+#moTa{
+  background-color: #84A0F1;
+  color: #00287A;
+  font-size: large;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+#addbtn_contain{
+  background-color: #FDEDCF;
+  display: flex;
+  justify-content: center;
+}
+#addButton{
+  background-color: #D9C097;
+  font-size: large;
+}
+#addButton:hover{
+  background-color: #FEF6E2;
+  font-size: 25px;
+  transition: 0.3s;
+}
