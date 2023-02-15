@@ -13,7 +13,7 @@
    <br>
   </mat-card-content>
   <mat-card-actions id="addbtn_contain">
-    <button mat-button id="addButton" *ngIf="item.outOfOrder==false" (click)="added(item.name)">BUY</button>
+    <button mat-button id="addButton" *ngIf="item.outOfOrder==false" (click)="addCart(item)">BUY</button>
     <p id="cantBuy" *ngIf="item.outOfOrder">OUT OF STOCK</p>
   </mat-card-actions>
 </mat-card>

@@ -1,3 +1,4 @@
+import { CartService } from './../../service/cart.service';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -6,13 +7,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dog-folder.component.scss']
 })
 export class DogFolderComponent {
+  constructor(private service:CartService){}
+
+  @Output() addCartCallBack: EventEmitter<any> = new EventEmitter();
+
+  addCart(item:any){
+    this.service.addCart(item);
+  }
   @Input()
   item:any;
-
-  @Output()
-  itemChange = new EventEmitter();
-
-  added(item: any){
-    this.itemChange.emit(item);
-  }
 }

@@ -1,0 +1,15 @@
+<mat-card class="container" >
+  <mat-card-header id="name">
+    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+    <mat-card-title> {{itemCart.name}}</mat-card-title>
+  </mat-card-header >
+  <img id="image" mat-card-image src="{{itemCart.image}}" >
+  <mat-card-content id="moTa">
+    <br>
+    <p>Details:{{itemCart.description}}</p>
+    <p>Price: {{itemCart.price}}</p>
+    <p *ngIf="itemCart.outOfOrder==false">Status: Available</p>
+    <p *ngIf="itemCart.outOfOrder">Status: Out of stock</p>
+   <br>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,29 @@
+#name{
+  display: flex;
+  justify-content: center;
+}
+#image{
+  width:  270px;
+  height: 250px;
+  object-fit: cover;
+}
+#moTa{
+  background-color: #84A0F1;
+  color: #00287A;
+  font-size: large;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+#name{
+  color: #ffff;
+}
+.container{
+  $con: 15px;
+  margin: $con;
+  height: calc(100% - $con * 2);
+  max-width: 100%;
+  width: 270px;
+  background-color: #673ab7;
+}

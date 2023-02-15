@@ -1,1 +1,8 @@
-<p>cart works!</p>
+<h1>CART</h1>
+<div id="cont">
+<div *ngFor="let c of cart">
+  <!-- <app-item-cart [itemCart]="c.item" (addCartCallBack)="addCart($event)"></app-item-cart> -->
+  <app-item-cart [itemCart]="c.item" (addCartCallBack)="addCart($event)"></app-item-cart>
+  <div>:Amount: {{c.quantity}}</div>
+</div>
+</div>

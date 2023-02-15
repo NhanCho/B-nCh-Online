@@ -1,8 +1,8 @@
 <div id="myApp">
 
   <mat-toolbar class="toolbar" color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
+    <button [routerLink]="['home']" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>home</mat-icon>
     </button>
     <span id="shopName">SmolDog Shopping Store</span>
     <form class="example-form">
@@ -20,17 +20,9 @@
         <mat-icon>shopping_cart</mat-icon>
       </button>
       <button mat-icon-button class="icon" aria-label="">
-        <mat-icon>home</mat-icon>
+        <mat-icon>share</mat-icon>
       </button>
   </mat-toolbar>
 
 </div>
-
-<div class="title">
-  <h1>PRODUCT</h1>
-</div>
-<div class ="sanPham">
-  <app-dog-folder [item]="item" (itemChange)="itemChange($event)" *ngFor="let item of items"></app-dog-folder>
-</div>
 <router-outlet></router-outlet>
-
