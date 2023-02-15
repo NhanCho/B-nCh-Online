@@ -1,5 +1,5 @@
 <div id="myApp">
-<p>
+
   <mat-toolbar class="toolbar" color="primary">
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
@@ -10,45 +10,27 @@
       <mat-label>Search</mat-label>
       <input matInput id="input"> <mat-icon matSuffix id="iconSearch">search</mat-icon>
       </mat-form-field>
-    </form> 
+    </form>
     <span class="example-spacer"></span>
     <div class="example-button-row">
-      <button mat-button>Đăng nhập</button>
-      <button mat-button>Đăng ký</button>
+      <button mat-button>SIGN IN</button>
+      <button mat-button>SIGN UP</button>
     </div>
-      <button mat-icon-button class="icon" aria-label="Example icon-button with shopping_cart icon">
+      <button [routerLink]="['cart']" mat-icon-button class="icon" aria-label="Example icon-button with shopping_cart icon">
         <mat-icon>shopping_cart</mat-icon>
       </button>
       <button mat-icon-button class="icon" aria-label="">
         <mat-icon>home</mat-icon>
       </button>
   </mat-toolbar>
-</p>
+
 </div>
 
 <div class="title">
-  <h1>SẢN PHẨM</h1>
+  <h1>PRODUCT</h1>
 </div>
-<div class = "sanPham">
-    <mat-card class="container" *ngFor="let item of items">
-      <mat-card-header id="name">
-        <!-- <div mat-card-avatar class="example-header-image"></div> -->
-        <mat-card-title> {{item.name}}</mat-card-title>
-      </mat-card-header>
-      <img id="image" mat-card-image src="{{item.image}}" >
-      <mat-card-content id="moTa">
-        <br>
-        <p>Chi tiết:{{item.description}}</p>
-        <p>Giá: {{item.price}}</p>
-        <p *ngIf="item.outOfOrder==false">Tình trạng: Còn hàng</p>
-        <p *ngIf="item.outOfOrder==true">Tình trạng: Hết hàng</p>
-       <br>
-      </mat-card-content>
-      <mat-card-actions id="addbtn_contain">
-        <button mat-button id="addButton">MUA</button>
-      </mat-card-actions>
-    </mat-card>
+<div class ="sanPham">
+  <app-dog-folder [item]="item" (itemChange)="itemChange($event)" *ngFor="let item of items"></app-dog-folder>
 </div>
-
-
+<router-outlet></router-outlet>
 

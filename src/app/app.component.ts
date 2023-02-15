@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'shoppingPage';
   // Array=['Arr1','Arr2','Arr3','Arr4','Arr5'];
-  value = 'Clear me';
+  // value = 'Clear me';
   items:Array<any>=[
     {
       id:1,
-      name:"Dog 1",
+      name:"Black Poodle",
       image:"../assets/blackdog.jpg",
       description:"This is dog 1",
       price: 2000000,
@@ -20,7 +20,7 @@ export class AppComponent {
     },
     {
       id:2,
-      name:"Dog 2",
+      name:"Brown Poodle",
       image:"../assets/browndog.jpg",
       description:"This is dog 2",
       price: 2000000,
@@ -28,7 +28,7 @@ export class AppComponent {
     },
     {
       id:3,
-      name:"Dog 3",
+      name:"Shepherd Dog",
       image:"../assets/dog.jpg",
       description:"This is dog 3",
       price: 5000000,
@@ -36,15 +36,15 @@ export class AppComponent {
     },
     {
       id:4,
-      name:"Dog 4",
-      image:"../assets/pome.jfif",
+      name:"Pomeranian",
+      image:"../assets/pome.jpg",
       description:"This is dog 4",
       price: 4000000,
       outOfOrder:false,
     },
     {
       id:5,
-      name:"Dog 5",
+      name:"Corgi",
       image:"../assets/Corgi2.jpg",
       description:"This is dog 5",
       price: 6000000,
@@ -52,7 +52,7 @@ export class AppComponent {
     },
     {
       id:6,
-      name:"Dog 6",
+      name:"Dachshund",
       image:"../assets/sauDog.jfif",
       description:"This is dog 6",
       price: 2000000,
@@ -60,8 +60,8 @@ export class AppComponent {
     },
     {
       id:7,
-      name:"Dog 7",
-      image:"../assets/blackdog.jpg",
+      name:"Samoyed",
+      image:"../assets/samoyed.jpg",
       description:"This is dog 7",
       price: 2000000,
       outOfOrder:true,
@@ -90,4 +90,8 @@ export class AppComponent {
       outOfOrder:true,
     },
   ]
+
+  itemChange(item: any){
+    console.log(item);
+  }
 }

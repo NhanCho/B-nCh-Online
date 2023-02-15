@@ -1,0 +1,49 @@
+
+#name{
+  display: flex;
+  justify-content: center;
+}
+#image{
+  width:  270px;
+  height: 250px;
+  object-fit: cover;
+}
+#moTa{
+  background-color: #84A0F1;
+  color: #00287A;
+  font-size: large;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+#addbtn_contain{
+  background-color: #FDEDCF;
+  display: flex;
+  justify-content: center;
+}
+#addButton{
+  background-color: #D9C097;
+  font-size: large;
+}
+#addButton:hover{
+  background-color: #FEF6E2;
+  font-size: 25px;
+  transition: 0.3s;
+}
+#cantBuy{
+  margin-top: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+#name{
+  color: #ffff;
+}
+.container{
+  $con: 15px;
+  margin: $con;
+  height: calc(100% - $con * 2);
+  max-width: 100%;
+  width: 270px;
+  background-color: #673ab7;
+}
