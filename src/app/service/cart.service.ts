@@ -13,6 +13,13 @@ export class CartService {
     return this.cart;
   }
   addCart(item:any){
+    for(let i=0; i< this.cart.length; i++){
+      if(this.cart[i].item.id == item.id){
+        this.cart[i].quantity +=1;
+        console.log(this.cart);
+        return;
+      }
+    }
     this.cart.push(
       {
         item: item,

@@ -4,5 +4,9 @@
   <!-- <app-item-cart [itemCart]="c.item" (addCartCallBack)="addCart($event)"></app-item-cart> -->
   <app-item-cart [itemCart]="c.item" (addCartCallBack)="addCart($event)"></app-item-cart>
   <div>:Amount: {{c.quantity}}</div>
+  <div id="price">Tổng tiền: {{c.quantity * c.item.price}}</div>
+  <div id="buyButton"><Button>BUY</Button></div>
+
+
 </div>
 </div>
